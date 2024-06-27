@@ -1,0 +1,15 @@
+a {
+  /* display: flex; */
+  text-decoration: none;
+  color: black;
+  padding: 16px;
+}
+.nav {
+  display: flex;
+  gap: 40%;
+}
+#shoe {
+  width: 1000px;
+  /* height: 200px; */
+
+}
