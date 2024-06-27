@@ -1,8 +1,80 @@
-.item {
-  display: flex;
-  flex-wrap: wrap;
+/* .item {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
   gap: 5%;
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
+} */
+
+/* Product Component Styles */
+/* Product List Styles */
+/* Product List Styles */
+.product-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+
+/* Product Card Styles */
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.product-image {
+  height: 200px;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.product-image img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.product-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.product-category {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+/*   
+  Loading, Error, and No Products Styles */
+/* .loading-message, */
+/* .error-message, */
+.no-products-message {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-top: 2rem;
 }
